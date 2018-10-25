@@ -1,0 +1,780 @@
+@import 'main'
+@import 'my-mixins'
+@import 'my-vars'
+
+
+g
+  position: relative
+
+header, section
+  width: 100%
+  float: left
+  text-align: center
+  position: relative
+
+section
+  //min-height: 100vh
+  background: black
+  position: relative
+
+
+.la-content
+  +inline(top)
+  position: relative
+  width: 90%
+  max-width: 1200px
+
+.la-wrap-row
+  +inline(top)
+  width: 100%
+  position: relative
+
+.la-wrap-content
+  +inline(middle)
+  text-align: left
+  position: relative
+
+.la-wrap-content-max-width
+  max-width: 420px
+
+.la-wrap-content-padding-top
+  padding-top: 100px
+
+.la-wrap-content-max-width-image
+  max-width: 600px
+  text-align: center
+
+.la-featured-title
+  color: $blue-highlight
+  width: 100%
+  font-family: "Neon Tubes 2"
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 2rem
+  line-height: 2.2rem
+  text-align: center
+  text-shadow: 0 0 1px $blue-highlight, 0 0 20px $blue-highlight, 0 0 40px $blue-highlight, 0 7px 10px black, 0 7px 10px black, 0 -2px 0 black, 0 0 30px $blue-highlight, 0 0 100px $blue-highlight, 0 0 100px rgba($blue-highlight, .4)
+  letter-spacing: 1px
+
+
+.la-inline-ref
+  display: block
+  position: absolute
+  text-transform: uppercase
+  color: white
+  font-size: 1rem
+  line-height: 1.2rem
+  right: 0
+  bottom: -40px
+  font-family: "ITC Franklin Gothic Std Demi"
+
+header
+  position: fixed
+  background: $blue-header
+  z-index: 999
+  height: 100px
+  overflow: hidden
+  text-align: left
+
+  h1
+    margin: 0
+    +inline(top)
+    height: 100px
+    width: 389px
+    background: url("../img/luz-azul.png") no-repeat center
+    background-size: 100%
+    text-indent: -999999px
+
+  nav
+    +inline(top)
+    position: absolute
+    top: 50%
+    +translate-y
+
+  ul
+    +inline(top)
+    list-style: none
+
+    li
+      +inline(top)
+      margin: 0
+      margin-left: 40px
+
+      a
+        +inline(top)
+        text-decoration: none
+        font-family: 'Neon Tubes 2'
+        font-weight: 700
+        font-size: 1.8rem
+        line-height: 1.8rem
+        color: white
+        text-transform: uppercase
+        background: transparent
+        transition: all .3s
+
+        &:hover
+          color: $blue-light
+          text-shadow: $blue-light 0 0 10px
+
+      .la-active
+        color: $blue-light
+        text-shadow: $blue-light 0 0 10px
+
+
+#a-luz-azul
+  background: url("../img/bg1.jpg") no-repeat center -500px
+  background-size: cover
+  padding-top: 60px
+
+#ameaca
+  background: url("../img/bg2.jpg") no-repeat center
+  background-size: cover
+
+  article
+    min-height: 100vh
+
+
+#ameaca-refs
+  background: url("../img/bg3.jpg") no-repeat center
+  background-size: cover
+
+  article
+    min-height: 100vh
+
+  .la-wrap-content
+    width: 100%
+    text-align: center
+    max-width: 800px
+    margin: 0
+    transform: none
+    left: 0
+
+  .la-btn-refs
+    +inline(top)
+    font-size: 2rem
+    line-height: 2rem
+    color: white
+    letter-spacing: 1px
+    text-transform: uppercase
+    font-family: "ITC Franklin Gothic Std Book"
+    position: absolute
+    bottom: 0
+    background: $blue-neon
+    width: 100%
+    padding: 10px 0
+    cursor: pointer
+
+
+#de-onde-vem
+  h1
+    animation-delay: 2s
+
+  padding-bottom: 200px
+
+section
+
+  article
+    //min-height: 100vh
+    padding: 50px 0
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+  h1
+    +inline(top)
+    
+    span
+      display: none
+
+    img
+      +inline(top)
+      width: 100%
+
+  h2
+    +inline(top)
+    color: white
+    font-family: "ITC Franklin Gothic Std Med"
+    font-weight: normal
+    font-size: 2.6rem
+    line-height: 2.8rem
+    width: 100%
+    margin-bottom: 20px
+
+    strong
+      color: $blue-highlight
+
+  p
+    +inline(top)
+    width: 100%
+    color: white
+    font-family: "ITC Franklin Gothic Std Book"
+    font-weight: normal
+    font-size: 1.8rem
+    line-height: 2.2rem
+
+    strong
+      color: $blue-highlight
+
+  .la-description
+    color: $blue-highlight
+    font-size: 1.4rem
+    line-height: 1.4rem
+    width: 100%
+    position: absolute
+    bottom: -150px
+    right: 30px
+    text-align: right
+
+  .a-wrap-content-resources .la-inline-ref
+    right: 30px
+    bottom: -50px
+
+  .la-bl-resources
+    +inline(top)
+    width: 100%
+    list-style: none
+    display: flex
+    justify-content: center
+
+    li
+      flex-basis: 0
+      flex-grow: 1
+
+      button
+        cursor: pointer
+
+        &:hover
+          animation: btnlights 1s ease-in-out
+
+        img
+          +inline(top)
+          width: 100%
+
+        p
+          +inline(top)
+          text-transform: uppercase
+          color: $blue-highlight
+          font-size: 1.2rem
+          line-height: 1.2rem
+          height: 24px
+          margin-bottom: 30px
+
+        span
+          color: $blue-highlight
+          +inline(top)
+          font-family: "Neon Tubes 2"
+          font-size: 1.4rem
+          line-height: 1.4rem
+          font-weight: 700
+          vertical-align: bottom
+          margin-bottom: 2px
+
+          strong
+            font-size: 2rem
+            vertical-align: bottom
+
+  .la-inline-buttons
+    width: 100%
+    max-width: 440px
+    display: block
+    position: relative
+    left: 50%
+    margin-top: 40px
+    +translate-x
+    text-align: left
+
+    li
+      +inline(top)
+
+      & + li
+        margin-left: 30px
+
+      button
+        +inline(top)
+        font-family: "Neon Tubes 2"
+        font-weight: 700
+        color: $blue-highlight
+        font-size: 2rem
+        line-height: 2rem
+        cursor: pointer
+        text-shadow: 0 0 20px $blue-neon, 0 0 30px $blue-neon, 0 0 30px $blue-neon, 0 0 40px $blue-neon, 0 -2px 0px black, 0 4px 4px black, 0 4px 4px black, 0 4px 4px black
+
+        &:hover
+          animation: btnlights 1s ease-in-out
+
+
+  .la-bl-average
+    +inline(top)
+    width: 100%
+
+    li
+      +inline(top)
+      width: 100%
+      text-align: left
+
+
+      button
+        +inline(top)
+        width: 100%
+        text-align: left
+
+        &:hover
+          animation: btnlights 1s ease-in-out
+
+        img
+          +inline(middle)
+          width: 150px
+
+        span
+          +inline(middle)
+          font-size: 6rem
+          color: $blue-highlight
+          font-family: "Neon Tubes 2"
+
+  .la-specter
+    svg
+      width: 100%
+      +inline(top)
+      margin-top: 50px
+
+    #btn-gamma, #btn-raio-x, #btn-uv, #btn-infravermelho, #btn-microondas, #btn-radio
+      cursor: pointer
+
+
+
+.la-wrap-content-max-width-image
+  p
+    max-width: 415px
+    text-align: left
+    margin-top: -50px
+
+  .la-inline-ref
+    right: 15%
+    bottom: -50px
+
+section h1
+  animation: titlelights 4s infinite
+
+@keyframes btnlights
+  0, 100%
+    opacity: 1
+
+  40%
+    opacity: .3
+
+  45%
+    opacity: .8
+
+  55%
+    opacity: .3
+
+  65%
+    opacity: .7
+
+  70%
+    opacity: .4
+
+  80%
+    opacity: .2
+
+@keyframes titlelights
+  0, 100%
+    opacity: 1
+
+  20%
+    opacity: .3
+
+  25%
+    opacity: .8
+
+  43%
+    opacity: .3
+
+  45%
+    opacity: 1
+
+  48%
+    opacity: .5
+
+  50%
+    opacity: 1
+
+  55%
+    opacity: .2
+
+  65%
+    opacity: .7
+
+  75%
+    opacity: .4
+
+
+@keyframes btnspecter
+  0, 100%
+    opacity: 0
+
+  50%
+    opacity: .5
+
+.la-btn-specter .st0
+  animation: btnspecter 2s infinite
+
+
+.la-pano-modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background: rgba(black, .9)
+  z-index: 9999
+
+.la-modal
+  width: 90%
+  max-width: 800px
+  padding: 40px
+  background: white
+  border-radius: 10px
+  position: fixed
+  top: 50%
+  left: 50%
+  max-height: 80vh
+  overflow-y: scroll
+  +translate
+  z-index: 99999
+
+  .la-btn-modal-close
+    position: absolute
+    right: 20px
+    top: 20px
+    font-size: 3rem
+    cursor: pointer
+    color: $blue-header
+    transition: all .3s
+
+    &:hover
+      color: $blue-neon
+
+  h1
+    +inline(top)
+    width: 100%
+    font-size: 2rem
+    text-transform: uppercase
+    font-family: "ITC Franklin Gothic Std Demi"
+    color: $blue-neon
+
+  p
+    +inline(top)
+    width: 100%
+    font-size: 1.6rem
+    line-height: 2rem
+    color: $blue-header
+    font-family: "ITC Franklin Gothic Std Book"
+
+    strong
+      //color: $blue-neon
+      //text-decoration: underline
+      font-weight: 500
+
+  span
+    +inline(top)
+    width: 100%
+    text-align: right
+    font-size: 1.4rem
+    line-height: 1.4rem
+    text-transform: uppercase
+    color: $blue-neon
+    font-family: "ITC Franklin Gothic Std Demi"
+    margin-top: 10px
+
+.la-content-refs
+  background: url("../img/bg3.jpg") no-repeat center
+  background-size: cover
+  width: 100%
+  height: 100%
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 999999
+  padding-bottom: 20px
+
+  h2
+    +inline(top)
+    font-size: 2rem
+    line-height: 2rem
+    color: white
+    letter-spacing: 1px
+    text-transform: uppercase
+    font-family: "ITC Franklin Gothic Std Book"
+    background: $blue-neon
+    width: 100%
+    padding: 10px 0
+    cursor: pointer
+
+  h3
+    color: $blue-highlight
+    +inline(top)
+    width: 100%
+    font-family: "ITC Franklin Gothic Std Book"
+    font-size: 4rem
+    text-transform: uppercase
+    letter-spacing: 10px
+    margin: 40px 0 60px 0
+
+  h4
+    color: white
+    +inline(top)
+    width: 100%
+    font-family: "ITC Franklin Gothic Std Book"
+    font-size: 1.6rem
+    line-height: 2rem
+    margin-top: 100px
+    text-align: right
+    padding: 0 20px
+
+  ul
+    +inline(top)
+    width: 100%
+    word-wrap: break-word
+    font-size: 0
+
+    li
+      +inline(top)
+      width: 100%
+      font-family: "ITC Franklin Gothic Std Book"
+      color: $blue-highlight
+      text-align: left
+      display: flex
+      flex-flow: nowrap row
+
+      & + li
+        margin-top: 20px
+
+      span
+        +inline(top)
+        font-size: 1.6rem
+        line-height: 2rem
+        color: white
+        width: 80px
+        min-width: 80px
+
+      p
+        color: $blue-highlight
+        text-decoration: underline
+        word-wrap: break-word
+        overflow-wrap: break-word
+        -ms-word-break: break-all
+        word-break: break-all
+
+        +inline(top)
+        width: 100%
+        max-width: 100%
+
+.la-modal-tooltip
+  padding: 20px
+  text-align: left
+
+  h1
+    +inline(top)
+    width: 100%
+    font-size: 2rem
+    text-transform: uppercase
+    font-family: "ITC Franklin Gothic Std Demi"
+    font-weight: 400
+    color: $blue-neon
+
+  p
+    +inline(top)
+    width: 100%
+    font-size: 1.6rem
+    line-height: 2rem
+    color: $blue-header
+    font-family: "ITC Franklin Gothic Std Book"
+
+    strong
+      //color: $blue-neon
+      //text-decoration: underline
+      font-weight: 500
+
+  span
+    +inline(top)
+    width: 100%
+    text-align: right
+    font-size: 1.4rem
+    line-height: 1.4rem
+    text-transform: uppercase
+    color: $blue-neon
+    font-family: "ITC Franklin Gothic Std Demi"
+    margin-top: 40px
+
+.tipso_style
+  border-bottom: none !important
+
+
+.la-menu-mobile, .la-btn-menu-mobile, .la-specter-mobile
+  display: none
+
+.la-hide
+  opacity: 0
+
+
+
+@media all and (max-width: 1112px)
+
+  section
+    article
+      padding-bottom: 0
+
+    .la-specter
+      svg
+        margin-top: 100px
+
+    .la-bl-average
+      li
+        button
+          text-align: center
+
+  .la-inline-ref
+    right: auto
+    left: 50%
+    +translate-x
+    bottom: -40px
+
+  .la-inline-ref-bottom
+    bottom: auto
+    position: relative
+    width: 100%
+    text-align: center
+    margin-bottom: 40px
+
+  #a-luz-azul
+    background: url(../img/bg1.jpg) no-repeat center
+
+  .la-wrap-content-max-width-image
+    max-width: 100%
+
+    p
+      max-width: 100%
+
+    .la-inline-ref
+      right: auto
+      left: 50%
+      +translate-x
+      bottom: -40px
+
+  .la-wrap-content-max-width
+    max-width: 100%
+
+  .la-wrap-content-resources
+    max-width: 600px
+
+  section
+    .la-inline-buttons
+      max-width: 100%
+      text-align: center
+
+      li
+        margin: 10px 20px
+
+        & + li
+          margin-left: 20px
+
+
+
+@media all and (max-width: 850px)
+  header
+    height: 70px
+    h1
+      width: 272px
+      height: 70px
+      
+    nav
+      display: none
+
+    .la-btn-menu-mobile
+      color: white
+      font-size: 4rem
+      line-height: 4rem
+      position: absolute
+      right: 4%
+      top: 50%
+      display: block
+      +translate-y
+      transition: all .3s
+      cursor: pointer
+
+  .la-menu-mobile
+    position: fixed
+    width: 100%
+    height: 100%
+    background: rgba(black, .95)
+    left: 0
+    z-index: 99
+    padding: 20px
+    padding-top: 100px
+    display: none
+
+    ul
+      list-style: none
+      +inline(top)
+      width: 100%
+
+      li
+        +inline(top)
+        width: 100%
+
+        a
+          +inline(top)
+          color: white
+          text-decoration: none
+          font-family: "Neon Tubes 2"
+          font-size: 2.2rem
+          line-height: 2.2rem
+          font-weight: 700
+
+        & + li
+          margin-top: 20px
+          padding-top: 20px
+          border-top: 1px solid rgba(white, .2)
+          
+  .la-specter-desktop
+    display: none
+
+  .la-specter-mobile
+    display: block
+
+    svg
+      width: 100%
+      max-width: 240px
+
+
+@media all and (max-width: 700px)
+  .la-wrap-content
+    text-align: center
+
+  .la-wrap-content-max-width-image p
+    margin-top: 0
+    text-align: center
+
+  section .la-description
+    position: relative
+    right: auto
+    +inline(top)
+    text-align: center
+
+  .la-content-refs h3
+    font-size: 2rem
+
+
+
+
+
+
+
+
+
+
+
+
+

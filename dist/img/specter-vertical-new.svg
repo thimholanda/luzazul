@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 417 1805" style="enable-background:new 0 0 417 1805;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1A1A1A;enable-background:new    ;}
+	.st1{fill:#FF2100;enable-background:new    ;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'ITCFranklinGothicStd-Demi';}
+	.st4{font-size:21.5316px;}
+	.st5{fill:#A40016;enable-background:new    ;}
+	.st6{fill:#4C080F;enable-background:new    ;}
+	.st7{fill:#822399;enable-background:new    ;}
+	.st8{fill:#4D1C7B;enable-background:new    ;}
+	.st9{fill:#370C59;enable-background:new    ;}
+	.st10{fill:#FFFFFF;fill-opacity:0;}
+</style>
+<g id="image">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="1805" height="369" xlink:href="66D1AADB7866EDF.png"  transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 369 0)">
+	</image>
+	<rect x="209" y="-0.3" class="st0" width="37.3" height="471.3"/>
+	<rect x="209" y="796.1" class="st0" width="37.3" height="979.8"/>
+	
+		<rect x="299.2" y="1065" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -850.8333 1478.1666)" class="st1" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 222.8044 1170.7441)" class="st2 st3 st4">INFRAVERMELHO</text>
+	
+		<rect x="299.2" y="1335" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -1120.8334 1748.1666)" class="st5" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 240.6755 1440.7441)" class="st2 st3 st4">MICROONDAS</text>
+	
+		<rect x="299.2" y="1561.7" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -1347.5 1974.8334)" class="st6" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 280.0778 1667.4108)" class="st2 st3 st4">RÁDIO</text>
+	
+		<rect x="299.2" y="270" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -55.8333 683.1667)" class="st7" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 299.2409 375.7441)" class="st2 st3 st4">UV</text>
+	
+		<rect x="299.2" y="113.3" transform="matrix(6.123234e-17 -1 1 6.123234e-17 100.8333 526.5)" class="st8" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 276.6325 219.0775)" class="st2 st3 st4">RAIO X</text>
+	
+		<rect x="299.2" y="-50.7" transform="matrix(6.123234e-17 -1 1 6.123234e-17 264.8333 362.5)" class="st9" width="29" height="199"/>
+	<text transform="matrix(1 0 0 1 271.6803 55.0774)" class="st2 st3 st4">GAMMA</text>
+</g>
+<g id="btn-gamma">
+	<rect x="213" y="34" class="st10" width="30" height="99"/>
+</g>
+<g id="btn-raio-x">
+	<rect x="213" y="200" class="st10" width="30" height="90"/>
+</g>
+<g id="btn-uv">
+	<rect x="213" y="357" class="st10" width="30" height="42"/>
+</g>
+<g id="btn-infravermelho">
+	<rect x="213" y="1150" class="st10" width="30" height="199"/>
+</g>
+<g id="btn-microondas">
+	<rect x="213" y="1420" class="st10" width="30" height="160"/>
+</g>
+<g id="btn-radio">
+	<rect x="213" y="1647" class="st10" width="30" height="85"/>
+</g>
+</svg>
